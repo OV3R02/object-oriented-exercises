@@ -1,7 +1,7 @@
 /*  
  * First exercise:
  * 
- * Write a Java program to create a class called "Person" with a name and age attribute. 
+ * Write a Java program to create a class called "Person" with a name and an age attributes. 
  * Create two instances of the "Person" class, set their attributes using the constructor,
  * and print their name and age. 
  * 
