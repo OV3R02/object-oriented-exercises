@@ -1,0 +1,1 @@
+Some practical exercise for learning Object Oriented Programming on Java.
