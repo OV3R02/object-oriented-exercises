@@ -24,7 +24,7 @@
  *      p.setName("Mario")
  *      p.setAge(12)
  * 
- * 5) In the end of the work write println and put in the toString of "p";
+ * 5) At the end of the work write println and write in the toString of "p";
  * 
  * Enjoy!
  */
