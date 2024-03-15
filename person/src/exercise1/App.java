@@ -15,10 +15,9 @@
  *        private int age;
  *     }
  * 
- * 2) After we have made the two attributes, name and age, as instance now we have
- *    to make constructor of all two; 
+ * 2) After we have made the two attributes, name and age, now make constructor of all two; 
  * 3) After the point 2) create the setters, getters, hashCode, equals, toString of all two instance;
- * 4) Now in the main we have to put the values of the two attribute;
+ * 4) In the main we have to put the values of the two attribute;
  *    
  *  Example:
  *      Person p = new Person(String, int) 
