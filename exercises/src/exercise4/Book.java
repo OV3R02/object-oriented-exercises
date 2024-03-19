@@ -50,7 +50,7 @@ public class Book {
         result = prime * result + ((author == null) ? 0 : author.hashCode());
         result = prime * result + ((title == null) ? 0 : title.hashCode());
         result = prime * result + (int) (ISBN ^ (ISBN >>> 32));
-        return result;
+        return Math.abs(result);
     }
 
     @Override
@@ -90,8 +90,6 @@ public class Book {
     public void addBook(Book book) {
         books.add(book);
     }
-
-    
 
     public void rmBook(Book book) {
         books.remove(book);
