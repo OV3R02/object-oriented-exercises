@@ -9,7 +9,7 @@ package exercise4;
 
 public class App4 {
     public static void main(String[] args) {
-        Book b = new Book("Isac Asimov", "Fondazione", 0);
+        Book b = new Book("Isac Asimov", "Foundation", 0);
         System.out.println(b);
     }
 }

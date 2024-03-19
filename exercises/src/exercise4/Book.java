@@ -91,8 +91,6 @@ public class Book {
         books.add(book);
     }
 
-    
-
     public void rmBook(Book book) {
         books.remove(book);
     }
