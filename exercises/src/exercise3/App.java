@@ -6,9 +6,6 @@
  * Also define a class called "Account" to maintain
  * account details of a particular customer. 
  * 
- * Class Bank e Account create
- * Metodi add e remove account creati
- * 
  */
 
 package exercise3;
