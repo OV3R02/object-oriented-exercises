@@ -41,6 +41,8 @@ public class App {
         p.setAge(21);
         p.setName("Omar");
 
+        Object n = new Person("Giorgino", 2);
+
         System.out.println(p.getName()+" "+p.getAge());
     }
 }
