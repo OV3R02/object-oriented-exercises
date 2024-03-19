@@ -8,7 +8,7 @@ package exercise4;
 
 public class App {
     public static void main(String[] args) {
-        Book b = new Book("Isac Asimov", "Fondazione", 0);
+        Book b = new Book("Isac Asimov", "Fondation", 0);
         System.out.println(b);
     }
 }
