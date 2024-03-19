@@ -13,7 +13,7 @@
 
 package exercise3;
 
-public class App {
+public class App3 {
     public static void main(String[] args) {
 
         Bank a = new Bank();
