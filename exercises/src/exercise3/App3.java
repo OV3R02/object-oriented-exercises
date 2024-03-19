@@ -4,16 +4,13 @@
  * to add and remove accounts, and to deposit and
  * withdraw money.
  * Also define a class called "Account" to maintain
- * account details of a particular customer. 
- * 
- * Class Bank e Account create
- * Metodi add e remove account creati
+ * account details of a particular customer.
  * 
  */
 
 package exercise3;
 
-public class App {
+public class App3 {
     public static void main(String[] args) {
 
         Bank a = new Bank();
