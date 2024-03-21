@@ -11,7 +11,7 @@ package abstractClassExercises.exercise2;
 public class App2 {
     public static void main(String[] args) {
         Shape circle = new Circle(125);
-        Shape triangle = new Triangle(15, 50, 50);
+        Shape triangle = new Triangle(5, 5, 7);
 
         double a = circle.calculateArea();
         System.out.println("\nCircle's area: " + a);

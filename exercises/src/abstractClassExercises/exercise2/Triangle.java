@@ -2,62 +2,64 @@ package abstractClassExercises.exercise2;
 
 public class Triangle extends Shape {
 
-    private double bs;
-    private double ltS;
-    private double rtS;
+    private double sideA;
+    private double sideB;
+    private double sideC;
 
-    public Triangle(double bs, double ltS, double rtS) {
-
-        // Base
-        this.bs = bs;
-        
-        // Left side 
-        this.ltS = ltS;
-        
-        // Right side
-        this.rtS = rtS;
+    public Triangle(double sideA, double sideB, double sideC) {
+        this.sideA = sideA;
+        this.sideB = sideB;
+        this.sideC = sideC;
     }
 
-    // Get and set of every instance
-    public double getBs() {
-        return bs;
+    public double getSideA() {
+        return sideA;
     }
 
-    public void setBs(double bs) {
-        this.bs = bs;
+
+
+    public void setSideA(double sideA) {
+        this.sideA = sideA;
     }
 
-    public double getLtS() {
-        return ltS;
+
+
+    public double getSideB() {
+        return sideB;
     }
 
-    public void setLtS(double ltS) {
-        this.ltS = ltS;
+
+
+    public void setSideB(double sideB) {
+        this.sideB = sideB;
     }
 
-    public double getRtS() {
-        return rtS;
+
+
+    public double getSideC() {
+        return sideC;
     }
 
-    public void setRtS(double rtS) {
-        this.rtS = rtS;
+
+
+    public void setSideC(double sideC) {
+        this.sideC = sideC;
     }
 
-    // Method for calculate triangle's height 
-    private double getHeight() {
-        return (rtS + ltS) / bs;
+    @Override
+    public String toString() {
+        return "Triangle [sideA=" + sideA + ", sideB=" + sideB + ", sideC=" + sideC + "]";
     }
 
-    // Method for calculate triangle's area
     @Override
     public double calculateArea() {
-        return (bs * getHeight()) / 2;
+        double semiP = (sideA + sideB + sideC)/2;
+        return Math.sqrt(semiP * (semiP - sideA) * (semiP - sideB) * (semiP - sideC));
     }
-
-    // Method for calculate triangle's perimeter
     @Override
     public double calculatePerimeter() {
-        return rtS * ltS * bs;
+        return sideA + sideB + sideC;
     }
+
 
 }
