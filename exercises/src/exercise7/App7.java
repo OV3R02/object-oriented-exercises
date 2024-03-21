@@ -15,6 +15,7 @@ public class App7 {
         Song song4 = new Song("AC-DC", "Thunderstruck", "Rock");
         Song song5 = new Song("Welcome to the jungle", "Guns N'Roses", "Rock");
         Song song6 = new Song("Green Day", "American idiot", "Rock");
+        
         lib1.addSong(song1);
         lib1.addSong(song2);
         lib1.addSong(song3);
