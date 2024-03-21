@@ -1,4 +1,4 @@
-package exercise7;
+package basicExercises.exercise7;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,8 +36,8 @@ public class MusicLibrary {
 
     public void printLib() {
         System.out.println("\n__________________________________| PLAYLIST |__________________________________\n");
-        for (int i = 0; i < songLib.size(); i++) {
-            System.out.println(i + ") " + songLib.get(i));
+        for (Song song : songLib) {
+            song.getSongInfo();
         }
         System.out.println("\n_________________________________________________________________________________\n");
     }

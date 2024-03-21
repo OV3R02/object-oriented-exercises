@@ -1,4 +1,4 @@
-package exercise7;
+package basicExercises.exercise7;
 
 public class Song {
     private String songTitle;
@@ -65,5 +65,10 @@ public class Song {
         return "Song [Song Title = " + songTitle+"\n"+ ", Singer = " + singerName +"\n"+ ", Music Genre= " + musicType + "]";
     }
 
-    
+    public void getSongInfo(){
+        System.out.println("Song: "+getSongTitle());
+        System.out.println("Singer/group: "+getSingerName());
+        System.out.println("Genre: "+getMusicType());
+        System.out.println("\n");
+    }
 }

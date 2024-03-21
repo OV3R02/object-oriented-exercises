@@ -1,4 +1,4 @@
-package exercise5;
+package basicExercises.exercise5;
 
 public class Rectangle {
     private double width;

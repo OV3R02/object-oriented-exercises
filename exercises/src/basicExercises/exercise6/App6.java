@@ -4,7 +4,7 @@
  * 
  */
 
-package exercise6;
+package basicExercises.exercise6;
 
 public class App6 {
     public static void main(String[] args) {
