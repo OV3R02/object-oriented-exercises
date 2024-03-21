@@ -30,6 +30,7 @@ public class App7 {
 
         lib1.playRandomSongs();
 
+        System.out.println("Hi!");
     }
 
     
