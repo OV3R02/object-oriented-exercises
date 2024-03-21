@@ -2,16 +2,26 @@ package abstractClassExercises.exercise3;
 
 public class CurrentAccount extends BankAccount{
 
-    @Override
-    public double deposit() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deposit'");
+    public CurrentAccount(String account, double balance) {
+        super(account, balance);
     }
 
     @Override
-    public double withdraw() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'withdraw'");
+    public void deposit(double amount) {
+    setBalance(getBalance()+amount);
+    System.out.println("Deposit of E"+amount+" succesfull. Current balance is E"+getBalance());
+        
+    }
+
+    @Override
+    public void withdraw(double amount) {
+        
+        if (amount<=getBalance()) {
+            setBalance(getBalance()-amount);
+            System.out.println("Withdrawing of E "+amount+" succesfull. Now your balance is of E "+getBalance());
+        } else {
+            System.out.println("Transaction failed");
+        }
     }
 
 }
