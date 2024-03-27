@@ -10,14 +10,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class App4 {
-    // new List of numbers
-    List<Integer> intList = Arrays.asList(1,2,3,4,5,6,7,8,9);
     public static void main(String[] args) {
 
         // new List of numbers
         List<Integer> intList = Arrays.asList(1,2,3,4,5,6,7,8,9);
 
-        // First it prints the original list
+        // First print the original list
         System.out.println("\nList of numbers: \n");
         for (int numbers : intList) {
             System.out.println(numbers);
@@ -47,19 +45,6 @@ public class App4 {
         
 
 
-    }
-
-    public void oddNumbers() {
-        // Process to filtering odd numbers
-        List<Integer> oddNumbers = intList.stream()
-                                    .filter(numbers -> numbers%2!=0)
-                                    .collect(Collectors.toList());
-
-        // Output
-        System.out.println("\nOdd numbers of the list: \n");
-        for (int oddNumber : oddNumbers) {
-            System.out.println(oddNumber);
-        }  
     }
 }
 
