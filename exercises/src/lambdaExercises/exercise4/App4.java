@@ -42,9 +42,6 @@ public class App4 {
         for (int oddNumber : oddNumbers) {
             System.out.println(oddNumber);
         }
-        
-
-
     }
 }
 
