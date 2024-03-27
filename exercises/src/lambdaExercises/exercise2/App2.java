@@ -8,11 +8,17 @@ import java.util.function.Predicate;
 
 public class App2 {
     public static void main(String[] args) {
+
+        // Lambda expression for verifing the Strings
         Predicate<String> isEmptyString = str -> str.isEmpty();
+
+        // Two new variable
         String str1 = "";
         String str2 = "Hello!";
-        System.out.println("First example: "+isEmptyString.test(str1));
-        System.out.println("Seconth example: "+isEmptyString.test(str2));
+
+        // Output
+        System.out.println("First example: "+isEmptyString.test(str1)); // First example the string is empty so the output will be true
+        System.out.println("Seconth example: "+isEmptyString.test(str2)); // Seconth example will be false
     }
 }
 
