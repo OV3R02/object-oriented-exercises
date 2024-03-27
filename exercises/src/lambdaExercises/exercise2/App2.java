@@ -4,14 +4,15 @@
 
 package lambdaExercises.exercise2;
 
+import java.util.function.Predicate;
+
 public class App2 {
     public static void main(String[] args) {
-        verifyString vs = (w) -> w.isEmpty();
-        boolean w1 = vs.isWordEmpty("");
-        System.out.println(w1);
+        Predicate<String> isEmptyString = str -> str.isEmpty();
+        String str1 = "";
+        String str2 = "Hello!";
+        System.out.println("First example: "+isEmptyString.test(str1));
+        System.out.println("Seconth example: "+isEmptyString.test(str2));
     }
 }
 
-interface verifyString{
-    boolean isWordEmpty(String w);
-}
